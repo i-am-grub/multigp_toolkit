@@ -476,7 +476,7 @@ class RaceSyncCoordinator:
         pilot_counter = 0
 
         for slot_info in slots:
-            if slot_info.pilot_id == 0:
+            if slot_info.pilot_id is None:
                 continue
 
             if slot_info.pilot_id in heat_pilots:
