@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "MultiGP Toolkit"
-version = "3.1.0"
+version = "4.0.0-dev"
 description = "MultiGP RaceSync connector for RotorHazard"
 authors = ["Bryce Gruber <dev@brycegruber.com>"]
 readme = "README.md"
@@ -9,7 +9,7 @@ repository = "https://github.com/i-am-grub/MultiGP_Toolkit"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
 
 [tool.poetry.group.docs.dependencies]
