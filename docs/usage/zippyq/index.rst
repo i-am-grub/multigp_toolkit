@@ -76,40 +76,13 @@ The first ZippyQ round and the pilots within the round should now imported withi
 ZippyQ Pack Return
 ------------------------------
 
-.. important::
+1. Find the heat used for the race.
 
-        All instructions under this subsection will be performed under the ``Marshal`` page
+2. Unlock the Round / Heat for editing
 
-        .. image:: marshal_page.png
-                :width: 500
-                :alt: RotorHazard Marshal page
-                :align: center
-
-        If the panels under this subsection are not visable, verify your **timer** has an internet
-        connection and reboot the system. For more information, review the section on the 
-        :ref:`plugin's activation <plugin activation>`.
-
-The toolkit supports the functionality to give a pilot their pack back after a race if needed. 
-
-.. image:: pack_return.png
-        :width: 600
-        :alt: Pack Reutrn
-        :align: center
-
-1. Open the ``ZippyQ Pack Return Panel``.
-
-2. Select the Race the pilot particpated in from the ``Race Result`` selector
-
-3. Select the pilot in the ``Pilot`` selector
-
-4. Click the ``Return Pack`` button
+3. Find the slot of the pilot whose pack you wish to return and set it to ``-None-``
 
 .. note::
 
     The race director will still need to manually remove the pack through
     the MultiGP ZippyQ admin kiosk for the race.
-
-.. note::
-
-    This action will not remove the results from the RotorHazard system, but it will 
-    disassociate the result from the pilot.
