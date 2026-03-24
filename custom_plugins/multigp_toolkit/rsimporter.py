@@ -202,7 +202,7 @@ class RaceSyncImporter:
             self._rhapi.ui.message_notify(self._rhapi.language.__(message))
             return
 
-        for mgp_pilot in race_data["entries"]:
+        for mgp_pilot in race_data.get("entries", []):
             self.pilot_search(mgp_pilot, update_attrs=True)
 
         self._rhapi.ui.broadcast_pilots()
@@ -410,7 +410,7 @@ class RaceSyncImporter:
         format_id, mgp_format = format_data
         rh_race_name = str(race_data["name"])
 
-        for mgp_pilot in race_data["entries"]:
+        for mgp_pilot in race_data.get("entries", []):
             self.pilot_search(mgp_pilot, update_attrs=True)
 
         if (
