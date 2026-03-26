@@ -31,6 +31,12 @@ B. Set ``MultiGP Race Format`` to ``PREDEFINED_HEATS``
 ZippyQ Races
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+A race class with ZippyQ active will expect each heat within the class
+to only be raced once; the system will attempt to prevent a heat from
+being ran a second round. In the event a saved race needs to be re-ran,
+and the race was saved to the internal database, see 
+:ref:`Move Race Results  <move results>`.
+
 .. image:: zippy_settings.webp
     :width: 500
     :alt: ZippyQ Class Settings
@@ -56,7 +62,11 @@ D. Set ``MultiGP Race Format`` to ``ZIPPYQ``
 Bracketed Races
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The recommended settings for running a Bracketed races includes the following:
+A race class with Bracketed Race active will expect each heat within the class
+to only be raced once; the system will attempt to prevent a heat from
+being ran a second round. In the event a saved race needs to be re-ran,
+and the race was saved to the internal database, see 
+:ref:`Move Race Results  <move results>`. 
 
 A. Set ``Round Type`` to ``Count races per heat``
     - This will allow the system automatically create a new heat under the class
@@ -66,6 +76,19 @@ B. Set ``Rounds`` to ``1``
 C. Set ``MultiGP Race Format`` to ``BRACKET``
     - This activates the features of the plugin specifically designed for bracketed
     results when uploading to MultiGP
+D. Optional: Set ``Ranking`` to ``Last Heat Position``
+    - The will rank all the pilots in the class based on the position of the last
+    heat they raced in. Pilots in later heats will be ranked higher. This works
+    well for the bracket generators built into RotorHazard, but may not have the
+    desired result in all types of brackets.
+    - Some stream overlays are not compatible with setting ``Ranking`` to the
+    non-default value.
+
+.. note::
+    If a heat needs to be re-ran multiple times due to the rule of a race format
+    (like MultiGP's chace-the-ace), it is advised to duplicate the heat
+    (press the ``+`` button on the heat within the race class) for each re-run
+    instead of attempting to use the same heat repeatedly. 
 
 Enforced Rules
 -------------------------------------------
@@ -137,6 +160,8 @@ into the internal database. Once the results are saved into the database, they c
         :width: 500
         :alt: Discarding Laps
         :align: center
+
+.. _move results:
 
 Move Race Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
