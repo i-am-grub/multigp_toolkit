@@ -562,7 +562,7 @@ class RaceSyncCoordinator:
 
         if (
             self._rhapi.db.raceclass_attribute_value(heat_info.class_id, "mgp_mode")
-            != MGPMode.PREDEFINED_HEATS
+            == MGPMode.ZIPPYQ
         ):
             if self._rhapi.db.heat_max_round(heat_info.id) > 0:
                 message = "MultiGP Race Type: Round cannot be repeated"
