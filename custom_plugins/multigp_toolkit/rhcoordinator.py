@@ -494,11 +494,6 @@ class RaceSyncCoordinator:
         if pilot_counter == 0:
             return False
 
-        if gq_active and pilot_counter < 3:
-            message = "GQ Rules: At least 3 pilots are required to start the race"
-            self._rhapi.ui.message_alert(self._rhapi.language.__(message))
-            return False
-
         return True
 
     def _race_zippyq_checks(self, heat_info: Heat) -> bool:
