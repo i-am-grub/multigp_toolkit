@@ -136,7 +136,7 @@ a class that was imported as a Global Qualifier (Controlled or ZippyQ).
     race director when a mandatory update is available for 
     either RotorHazard or the MultiGP Toolkit
 
-- A minimum of 3 pilots are required per heat
+- A minimum of 1 pilot must be registered in the heat for the results to be uploaded to MultiGP
 - The imported class from MultiGP can not be altered and must be used for the Global Qualifier event (results will not be uploaded otherwise)
 - The format assigned to the imported class from MultiGP cannot be altered with exception to the settings that manage the start/stop behavior of the timer
 - Other plugins can not be used to register laps
