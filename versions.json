@@ -9,11 +9,13 @@
     },
     "MultiGP Toolkit" : {
         "hashes" : [
-            "a7ee25c34b270266e031819a270e4f1f"
+            "a7ee25c34b270266e031819a270e4f1f",
+            "446a71c6e60e59217b015b996b8ca8b3"
         ],
         "versions" : [
-            "4.0.0"
+            "4.0.0",
+            "4.0.2"
         ],
-        "latest" : "4.0.0"
+        "latest" : "4.0.2"
     }
 }
